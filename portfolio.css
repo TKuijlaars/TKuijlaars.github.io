@@ -25,7 +25,7 @@ h1, h2, h3, h4, p{
     text-align: center;
 }
     
-.myWeek1, .myWeek2{
+.myWeek1, .myWeek2, .myWeek3, .myWeek4, .myWeek5, .myWeek6, .myWeek7, .myWeek8, .myWeek9{
     margin: auto;
     max-width: 600px;
     background-color: rgb(220, 220, 220);
@@ -46,5 +46,6 @@ h1, h2, h3, h4, p{
     border-style: solid;
     border-radius: 10px;
     border-color: grey;
-    
+    text-align: center;
+    margin: auto;
 }

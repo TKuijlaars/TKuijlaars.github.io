@@ -50,6 +50,59 @@
 
 
     </div>
+
+    <div class="myWeek3">
+        <h2>Week 3</h2>
+        <h3>Inline data objects and visual encodings</h3>
+        <h3>AEX Daily High and Low</h3>
+        <p>The AEX index, derived from Amsterdam Exchange index, is a stock market index composed of Dutch companies that trade on Euronext Amsterdam, formerly known as the Amsterdam Stock Exchange.</p>
+        <p>This chart shows the daily high and low of the Amsterdam Exchange Index for all trading days in 2022</p>
+        <div class="chart" id="AEXChart1"></div>
+
+        <h3>AEX Daily Trading Range</h3>
+        <p>This chart uses the same data but revisualised to illustrate the daily trading range of the AEX</p>
+        <div class="chart" id="AEXChart2"></div>
+        <p>The second chart highlights the difference between the daily high and low of the AEX. This makes the range of prices more distinct. </p>
+        <p><a href="https://colab.research.google.com/drive/1kweBP0gNangk6KtPw2Ibw6XCVbIm0k0U?usp=sharing">Colab</a></p>
+    </div>
+
+    <div class="myWeek4">
+        <h2>Week 4</h2>
+        <h3>Implementing a Data Scraper</h3>
+        <p>Scraping Data from Pro Football Reference</p>
+        <p>A chart showing the leading 250 Quarterbacks in all-time career passing yards</p>
+        <div class="chart" id="NFLPassing"></div>
+        <p><a href="https://colab.research.google.com/drive/1GZSq6-_U7nA4q2LaHO7szNVrnTwNvhqm?usp=sharing">Colab Notebook</a> used for data scraping and processing</p>
+    </div>
+    
+    <div class="myWeek5">
+        <h2>Week 5</h2>
+        <h3>Nine Chart Dashboard</h3>
+        <p>A graph</p>
+    </div>
+
+    <div class="myWeek6">
+        <h2>Week 6</h2>
+        <h3>Reading Week</h3>
+    </div>
+
+    <div class="myWeek7">
+        <h2>Week 7</h2>
+        <h3>Base Map and a Choropleth</h3>
+        <p>A graph</p>
+    </div>
+
+    <div class="myWeek8">
+        <h2>Week 8</h2>
+        <h3>Festival of Economics</h3>
+        <p>A graph</p>
+    </div>
+
+    <div class="myWeek9">
+        <h2>Week 9</h2>
+        <h3>Advanced Charts</h3>
+        <p>A graph</p>
+    </div>
 </body>
 
 
@@ -59,12 +112,19 @@
     var myChart2 = "chart_trade2_PB_FDI.json";
     var myIMFChart1 = "IMFlending.json";
     var myIMFChart2 = "IMFlendingADJUSTED.json";
+    var myAEXChart1 = "AEXdaily.json";
+    var myAEXChart2 = "AEXdailyrange.json";
+    var myNFLPassing = "NFLPassing.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
-    vegaEmbed('#IMFChart1', myIMFChart1)
-    vegaEmbed('#IMFChart2', myIMFChart2)
+    vegaEmbed('#IMFChart1', myIMFChart1);
+    vegaEmbed('#IMFChart2', myIMFChart2);
+    vegaEmbed('#AEXChart1', myAEXChart1);
+    vegaEmbed('#AEXChart2', myAEXChart2);
+    vegaEmbed('#NFLPassing', myNFLPassing);
+
 </script>
 
 </html>
