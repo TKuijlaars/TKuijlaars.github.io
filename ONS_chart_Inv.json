@@ -1,0 +1,62 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "UK Investment",
+      "subtitle": [
+        "Total Gross Fixed Capital Formation",
+        "Chained volume measures (ref year=2015)",
+        "Seasonally Adjusted (£)",
+        "Source: ONS"
+      ],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "width": 200,
+    "height": 200,
+    "data": {
+      "url": "https://raw.githubusercontent.com/TKuijlaars/TKuijlaars.github.io/main/ONS_data_NPQT.json",
+      "format": {"type": "json", "property": "years"}
+    },
+    "mark": {"type": "line", "color": "rgb(0,47,167)", "strokeWidth": 2, "opacity": 1},
+    "transform": [
+      {"filter": "datum.year>minYear"},
+      {"filter": "datum.year<maxYear"},
+      {"calculate": "datum.value*1000000", "as": "series"}
+    ],
+    "params": [
+      {
+        "name": "minYear",
+        "value": 1960,
+        "bind": {
+          "input": "range",
+          "min": 1960,
+          "max": 2022,
+          "step": 1,
+          "name": "Start year:"
+        }
+      },
+      {
+        "name": "maxYear",
+        "value": 2022,
+        "bind": {
+          "input": "range",
+          "min": 1960,
+          "max": 2022,
+          "step": 1,
+          "name": "End year:"
+        }
+      }
+    ],
+    "encoding": {
+      "x": {"field": "date", "type": "temporal", "title": null},
+      "y": {
+        "field": "series",
+        "type": "quantitative",
+        "title": null,
+        
+        "axis": {"format": ",.2s"}
+      }
+    }
+  }

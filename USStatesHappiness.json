@@ -1,0 +1,67 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "width": 500,
+    "height": 300,
+    "view": {"stroke": "transparent"},
+  
+    "title": {
+        "text": "US Happiness by State",
+        "fontSize": 12,
+        "subtitle":["Happiness Score and its component factors.", "Source Wallethub (2022)"],
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10, "anchor": "middle"},
+    
+    "data": {
+      "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/geoUSStates.json",
+      "format": {"property": "features"}
+    },
+  
+    "projection": {"type": "albersUsa"},
+    "mark": "geoshape", 
+  
+    "params": [
+      {"name": "Select",
+        "value": "Happiness",
+        "bind": {
+          "input": "select",
+          "options": [
+            "Happiness Score",
+            "Population 2022",
+            "Emotional and Physical Wellbeing Rank",
+            "Work Environment Rank",
+            "Community and Environment Rank"
+]}}],
+  
+    "transform": [
+              
+        {"lookup": "properties.NAME",
+            "from": {
+                "data": {"url": "https://raw.githubusercontent.com/TKuijlaars/TKuijlaars.github.io/main/USHappiness.csv"},
+                "key": "state",
+                "fields": [       
+                    "Happiness Score",
+                    "Population 2022",
+                    "Emotional and Physical Wellbeing Rank",
+                    "Work Environment Rank",
+                    "Community and Environment Rank"
+                   ]}},
+
+          {"calculate": "datum[Select]","as": "varSelected"}],
+ 
+    "encoding":{
+      
+        "color":{
+            "field":"varSelected",
+            "legend":{
+                "title":null,
+                "orient": "right",
+                "direction": "vertical"},
+            "type": "quantitative",
+            "scale":{"scheme":"viridis"}},
+      
+        "tooltip":[
+            {"field":"properties.NAME", "title": "State"},
+            {"field":"varSelected", "title": "Value", "format": ",d"}]
+    }
+  }

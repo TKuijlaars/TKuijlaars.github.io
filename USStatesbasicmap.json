@@ -1,0 +1,27 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width":500,
+  "height":300,
+    "data":{
+      "url":"https://raw.githubusercontent.com/TKuijlaars/TKuijlaars.github.io/main/USStatesgeo.json",
+      "format":{
+        "property": "features"}},
+  
+        "projection": {
+          "type": "albersUsa"
+        },  
+  
+      "mark":{
+        "type": "geoshape",
+        "fill": "darkblue",
+        "stroke":"darkgray",
+        "strokeWidth":0.5
+      },
+      "encoding": {
+        "tooltip":{
+          "field":"properties.NAME", "type": "nominal"
+        }
+      }
+  
+  }
+  

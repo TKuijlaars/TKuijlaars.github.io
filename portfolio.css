@@ -9,6 +9,9 @@
 
 /* Set the background color for my page: */
 
+
+
+
 body{
     background-image: url("DSfE_background.jpg");
     background-repeat: no-repeat;
@@ -25,15 +28,13 @@ h1, h2, h3, h4, p{
     text-align: center;
 }
     
-.myWeek1, .myWeek2, .myWeek3, .myWeek4, .myWeek5, .myWeek6, .myWeek7, .myWeek8, .myWeek9{
+.myWeek1, .myWeek2, .myWeek3, .myWeek4, .myWeek5, .myWeek6, .myWeek7, .myWeek8, .myWeek9, .myWeek10 {
     margin: auto;
-    max-width: 600px;
+    max-width: 1000px;
     background-color: rgb(220, 220, 220);
-
-      
-    border-width: 3px;
+    border-width: 5px;
     border-style: solid;
-    border-radius: 10px;
+    border-radius: 50px;
     border-color: rgb(100,100,100);
 }
 
@@ -42,10 +43,54 @@ h1, h2, h3, h4, p{
 .chart{
     background-color: white;
     width:450px;
-    border-width: 2px;
+    border-width: 3px;
     border-style: solid;
-    border-radius: 10px;
+    border-radius: 5px;
     border-color: grey;
     text-align: center;
     margin: auto;
+    max-width: 1000px;
+    margin-bottom: 2.5%;
+    display: inline-block;
+}
+
+.dashchart{
+    background-color:white;
+    border-color: rgb(40, 107, 130);
+    border-radius: 5px; 
+    border-style: solid;
+    border-width: 3px;
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 2.5%; 
+    max-width: 1000px;
+    text-align: center;
+    width: 425px;
+
+    
+}
+/*Grid*/
+.grid{
+    display: grid;
+    max-width: 1000px; 
+    grid-column-gap: 1px;
+    grid-row-gap: 3px;
+    grid-template-columns: repeat(2,1fr);
+}
+.grid > div{
+    background-color: #ffffff;
+    width: 300px;
+}
+
+.grid2{
+    display: grid;
+    max-width: 1000px; 
+    grid-column-gap: 1px;
+    grid-row-gap: 3px;
+    grid-template-columns: repeat(1,1fr);
+}
+
+.grid2 > div{
+    background-color: #ffffff;
+    width: 300px;
 }

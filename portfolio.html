@@ -71,6 +71,7 @@
         <h3>Implementing a Data Scraper</h3>
         <p>Scraping Data from Pro Football Reference</p>
         <p>A chart showing the leading 250 Quarterbacks in all-time career passing yards</p>
+        <p>Includes a tooltip</p>
         <div class="chart" id="NFLPassing"></div>
         <p><a href="https://colab.research.google.com/drive/1GZSq6-_U7nA4q2LaHO7szNVrnTwNvhqm?usp=sharing">Colab Notebook</a> used for data scraping and processing</p>
     </div>
@@ -78,7 +79,21 @@
     <div class="myWeek5">
         <h2>Week 5</h2>
         <h3>Nine Chart Dashboard</h3>
-        <p>A graph</p>
+        <p>UK GDP API Dashboard</p>
+        <div class="grid">
+            <div class = dashchart id = "ONSChart1" style = "display: block;"></div>
+            <div class = dashchart id = "ONSChart2" style = "display: block;"></div>
+            <div class = dashchart id = "ONSChart3" style = "display: block;"></div> 
+            <div class = dashchart id = "ONSChart4" style = "display: block;"></div>
+            <div class = dashchart id = "ONSChart5" style = "display: block;"></div>
+            <div class = dashchart id = "ONSChart6" style = "display: block;"></div>
+            <div class = dashchart id = "ONSChart7" style = "display: block;"></div>
+            <div class = dashchart id = "ONSChart8" style = "display: block;"></div>
+          </div>
+          <div class="grid2">
+            <div class = dashboard id = "ONSChart9" style = "display: block"></div>
+        </div>
+        <p>The <a href="https://colab.research.google.com/drive/13LcNCM7MoTyLLXfj3_CH2pQvIaefj5CR?usp=sharing">Colab Notebook</a> where I used a loop on ONS APIs to gather data. </p>
     </div>
 
     <div class="myWeek6">
@@ -89,7 +104,11 @@
     <div class="myWeek7">
         <h2>Week 7</h2>
         <h3>Base Map and a Choropleth</h3>
-        <p>A graph</p>
+        <p>Base Map</p>
+        <div class="chart" id="USStatesmap1"></div>
+        <p>A Choropleth Map of the US showing happiness within the 50 States (and DC) including the overall Happiness Score and its factors</p>
+        <div class="chart" id="USStatesmap2"></div>
+        <p>Select one of the options for the chart to display</p>
     </div>
 
     <div class="myWeek8">
@@ -101,6 +120,12 @@
     <div class="myWeek9">
         <h2>Week 9</h2>
         <h3>Advanced Charts</h3>
+        <p>A graph</p>
+    </div>
+
+    <div class="myWeek10">
+        <h2>Weeks 10 & 11</h2>
+        <h3>Machine Learning</h3>
         <p>A graph</p>
     </div>
 </body>
@@ -115,6 +140,17 @@
     var myAEXChart1 = "AEXdaily.json";
     var myAEXChart2 = "AEXdailyrange.json";
     var myNFLPassing = "NFLPassing.json";
+    var myONSChart1 = "ONS_chart_GDP.json";
+    var myONSChart2 = " ONS_chart_GDPg.json";
+    var myONSChart3 = "ONS_chart_GDPpc.json";
+    var myONSChart4 = "ONS_chart_GDPpcg.json";
+    var myONSChart5 = "ONS_chart_GOV.json";
+    var myONSChart6 = "ONS_chart_INV.json";
+    var myONSChart7 = "ONS_chart_Exp.json";
+    var myONSChart8 = "ONS_chart_IMP.json";
+    var myONSChart9 = "ONS_chart_Consumption.json";
+    var myUSStatesmap1 = "USStatesbasicmap.json";
+    var myUSStatesmap2 = "USStatesHappiness.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
@@ -124,6 +160,18 @@
     vegaEmbed('#AEXChart1', myAEXChart1);
     vegaEmbed('#AEXChart2', myAEXChart2);
     vegaEmbed('#NFLPassing', myNFLPassing);
+    vegaEmbed('#ONSChart1', myONSChart1);
+    vegaEmbed('#ONSChart2', myONSChart2);
+    vegaEmbed('#ONSChart3', myONSChart3);
+    vegaEmbed('#ONSChart4', myONSChart4);
+    vegaEmbed('#ONSChart5', myONSChart5);
+    vegaEmbed('#ONSChart6', myONSChart6);
+    vegaEmbed('#ONSChart7', myONSChart7);
+    vegaEmbed('#ONSChart8', myONSChart8);
+    vegaEmbed('#ONSChart9', myONSChart9);
+    vegaEmbed('#USStatesmap1', myUSStatesmap1);
+    vegaEmbed('#USStatesmap2', myUSStatesmap2);
+
 
 </script>
 
