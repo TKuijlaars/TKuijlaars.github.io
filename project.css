@@ -1,0 +1,104 @@
+/* Set the background color for my page: */
+
+.banner{
+    width: 100%;
+    height: 130px;
+    background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url(DSfE_background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ }
+ .navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35 px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .navbar TK{
+    margin-top: 5%;
+    font-family: Arial;
+    color: #fff;
+    font-size: 60;
+    font-weight: bold 100;
+    list-style: none;
+    display: inline-block;
+    margin: 40 20px;  
+    position: relative;
+  }
+ 
+  .navbar ul li{ /* navigation bar*/ 
+     list-style: none;
+     display: inline-block;
+     margin: 0 20px;  
+     position: relative;
+  }
+  .navbar ul li a {
+     text-decoration: none;
+     font-size: 20px;
+     font-family: Arial;
+     color: #fff;
+  }
+  .navbar ul li::after{
+     content:'';
+     height: 3px;
+     width: 0;
+     background: #009688;
+     position: absolute;
+     left: 0;
+     bottom: -10px;
+     transition: 0.4s;
+ 
+  }
+  .navbar ul li:hover::after{
+     width: 100%;
+  }
+  .myWeek1, .myWeek2, .myWeek3, .myWeek4, .myWeek5, .myWeek6, .myWeek7, .myWeek8, .myWeek9, .myWeek10 {
+    margin: auto;
+    max-width: 1000px;
+    background-color: rgb(220, 220, 220);
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: rgb(100,100,100);
+}
+
+body{
+    background-image: url("DSfE_background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: screen;
+}
+
+
+/* Choose the appearance of the tags, h1, h3 and p: */
+h1, h2, h3, h4, p{
+    color:rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.chart{
+   background-color: white;
+   width:450px;
+   border-width: 3px;
+   border-style: solid;
+   border-radius: 5px;
+   border-color: grey;
+   max-width: 1000px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+}
+
+.tkimage{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+}

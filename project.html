@@ -1,25 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- Link to my style sheet -->
+    <link rel="stylesheet" href="portfolio.css">
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
 </head>
+
+
+
 <body>
-    
-<h1>This is my project</h1>
 
-<p>Here is a paragram</p>
+    <div class="banner">
+        <div class="navbar">
+            <TK>Thomas Kuijlaars</TK>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="https://github.com/TKuijlaars/TKuijlaars.github.io" >GitHub</a></li>
+                
+            </ul>
+        </div>
+        <div class="myWeek1">
+            <h1>Data Science Project</h1>
+        </div>
+        <div class="myWeek1">
+            <h1>Has the Netherlands reached the limits of its growth?</h1>
+            <p>In October 2022 the Financial Times published an article claiming that the Netherlands may have reached the limits of
+                its growth. I intend to test this hypothesis.
+            </p>
+            <a href="https://www.ft.com/content/4c56c9b2-f4ad-4956-9216-655acebd845d"><img src="FTNetherlands.PNG" class="tkimage"></a>
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aperiam repellat facilis dolorum recusandae blanditiis repellendus ipsam doloremque voluptas nobis, laborum pariatur, odio assumenda rerum. Perspiciatis consequatur nam sint harum tenetur nihil rerum amet ipsa, quaerat odit, unde esse fugit possimus temporibus corrupti voluptate deleniti aspernatur soluta dolor similique! Alias excepturi officia fugiat, dignissimos sint veritatis, porro voluptate quos ea expedita nostrum ipsum aut laboriosam veniam dolorem quaerat iure ratione itaque explicabo! Nam commodi dolor amet ad, consequatur earum temporibus corporis, quam illo cupiditate non optio! Eaque temporibus odio unde, architecto quibusdam non corporis laboriosam. Sit quia voluptates magnam debitis natus eum velit suscipit ab, asperiores praesentium quas quibusdam cupiditate, vel illo eveniet quam dolores rem eligendi quis accusantium reiciendis nesciunt possimus repudiandae obcaecati. At velit omnis facilis alias nam esse expedita illum laborum quod, assumenda deleniti sapiente animi deserunt tempore laudantium debitis non temporibus impedit quas, sed minus voluptatum accusamus. Iure quo excepturi obcaecati qui libero eveniet nemo nobis? Eaque facilis pariatur mollitia maxime, necessitatibus ab sint non illo aperiam neque inventore culpa nemo dolores labore dolorem aliquam expedita hic libero voluptas accusamus dolore vero. Possimus alias nihil laborum rem ipsum, modi, nostrum blanditiis, porro accusantium vel dolore velit.</p>
+            <div class="chart" id="PRChart1"></div>
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aperiam repellat facilis dolorum recusandae blanditiis repellendus ipsam doloremque voluptas nobis, laborum pariatur, odio assumenda rerum. Perspiciatis consequatur nam sint harum tenetur nihil rerum amet ipsa, quaerat odit, unde esse fugit possimus temporibus corrupti voluptate deleniti aspernatur soluta dolor similique! Alias excepturi officia fugiat, dignissimos sint veritatis, porro voluptate quos ea expedita nostrum ipsum aut laboriosam veniam dolorem quaerat iure ratione itaque explicabo! Nam commodi dolor amet ad, consequatur earum temporibus corporis, quam illo cupiditate non optio! Eaque temporibus odio unde, architecto quibusdam non corporis laboriosam. Sit quia voluptates magnam debitis natus eum velit suscipit ab, asperiores praesentium quas quibusdam cupiditate, vel illo eveniet quam dolores rem eligendi quis accusantium reiciendis nesciunt possimus repudiandae obcaecati. At velit omnis facilis alias nam esse expedita illum laborum quod, assumenda deleniti sapiente animi deserunt tempore laudantium debitis non temporibus impedit quas, sed minus voluptatum accusamus. Iure quo excepturi obcaecati qui libero eveniet nemo nobis? Eaque facilis pariatur mollitia maxime, necessitatibus ab sint non illo aperiam neque inventore culpa nemo dolores labore dolorem aliquam expedita hic libero voluptas accusamus dolore vero. Possimus alias nihil laborum rem ipsum, modi, nostrum blanditiis, porro accusantium vel dolore velit.</p>
-
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aperiam repellat facilis dolorum recusandae blanditiis repellendus ipsam doloremque voluptas nobis, laborum pariatur, odio assumenda rerum. Perspiciatis consequatur nam sint harum tenetur nihil rerum amet ipsa, quaerat odit, unde esse fugit possimus temporibus corrupti voluptate deleniti aspernatur soluta dolor similique! Alias excepturi officia fugiat, dignissimos sint veritatis, porro voluptate quos ea expedita nostrum ipsum aut laboriosam veniam dolorem quaerat iure ratione itaque explicabo! Nam commodi dolor amet ad, consequatur earum temporibus corporis, quam illo cupiditate non optio! Eaque temporibus odio unde, architecto quibusdam non corporis laboriosam. Sit quia voluptates magnam debitis natus eum velit suscipit ab, asperiores praesentium quas quibusdam cupiditate, vel illo eveniet quam dolores rem eligendi quis accusantium reiciendis nesciunt possimus repudiandae obcaecati. At velit omnis facilis alias nam esse expedita illum laborum quod, assumenda deleniti sapiente animi deserunt tempore laudantium debitis non temporibus impedit quas, sed minus voluptatum accusamus. Iure quo excepturi obcaecati qui libero eveniet nemo nobis? Eaque facilis pariatur mollitia maxime, necessitatibus ab sint non illo aperiam neque inventore culpa nemo dolores labore dolorem aliquam expedita hic libero voluptas accusamus dolore vero. Possimus alias nihil laborum rem ipsum, modi, nostrum blanditiis, porro accusantium vel dolore velit.</p>
-
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aperiam repellat facilis dolorum recusandae blanditiis repellendus ipsam doloremque voluptas nobis, laborum pariatur, odio assumenda rerum. Perspiciatis consequatur nam sint harum tenetur nihil rerum amet ipsa, quaerat odit, unde esse fugit possimus temporibus corrupti voluptate deleniti aspernatur soluta dolor similique! Alias excepturi officia fugiat, dignissimos sint veritatis, porro voluptate quos ea expedita nostrum ipsum aut laboriosam veniam dolorem quaerat iure ratione itaque explicabo! Nam commodi dolor amet ad, consequatur earum temporibus corporis, quam illo cupiditate non optio! Eaque temporibus odio unde, architecto quibusdam non corporis laboriosam. Sit quia voluptates magnam debitis natus eum velit suscipit ab, asperiores praesentium quas quibusdam cupiditate, vel illo eveniet quam dolores rem eligendi quis accusantium reiciendis nesciunt possimus repudiandae obcaecati. At velit omnis facilis alias nam esse expedita illum laborum quod, assumenda deleniti sapiente animi deserunt tempore laudantium debitis non temporibus impedit quas, sed minus voluptatum accusamus. Iure quo excepturi obcaecati qui libero eveniet nemo nobis? Eaque facilis pariatur mollitia maxime, necessitatibus ab sint non illo aperiam neque inventore culpa nemo dolores labore dolorem aliquam expedita hic libero voluptas accusamus dolore vero. Possimus alias nihil laborum rem ipsum, modi, nostrum blanditiis, porro accusantium vel dolore velit.</p>
+        <p>Another way of testing whether the Netherlands' economy is hitting its upper limit is testing how the companies
+            based in the country are performing. Using machine learing I clustered time series data for the Amsterdam
+            Exchange Index and 7 of the other largest market indices around the world across a 5 year time period and produced a Dendrogram.</p>
+        <p>The chart below shows the 8 time series for the indices labeled by thei respective ticker, and are grouped by the similarity in their behaviour.
+            The lower the number the smaller the sum of distances.
+        </p>
+        <p>Interestingly the Amsterdam Exchange Index (AEX) and the S&P500 (GSPC) are the most similar in behaviour.
+            The S&P 500 is widely regarded as one of the best gauges for the entire equities market. The S&P 500 has 
+            also been one of the best performing indices in recent history and has been emblematic of the growth of the US economy. The similarity in behaviour between the S&P and the
+            AEX is indicative of the not only the strong performance of Dutch companies but also of the fact that the Netherlands has room to grow.
+        </p>
+        <img src="AEX.png" class="tkimage">
+        <p><a href="https://colab.research.google.com/drive/1EMtjFnq1WsmTVvgxglDLMMphcsgX_01_?usp=sharing">Colab Notebook</a></p>
+        <p>Source: Yahoo Finance</p>
+        </div>
 
 </body>
+
+<script>
+var PRChart1 = "EuropeUnem.json";
+
+vegaEmbed('#PRChart1', PRChart1);
+
+
+</script>
 
 </html>
