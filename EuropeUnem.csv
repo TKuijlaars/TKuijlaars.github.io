@@ -1,52 +1,52 @@
-State,Unemployment rate
-Armenia,0.166
-Albania,0.175
-Andorra,0.037
-Austria,0.057
-Azerbaijan,0.050
-Belarus,0.010
-Belgium,0.057
-Bosnia and Herzegovina,0.157
-Bulgaria,0.053
-Croatia,0.071
-Cyprus,0.068
-Czech Republic,0.032
-Denmark,0.061
-Estonia,0.072
-Finland,0.084
-France,0.080
-Georgia,0.124
-Germany,0.045
-Greece,0.128
-Hungary,0.045
-Iceland,0.068
-Ireland,0.058
-Italy,0.102
-Kazakhstan,0.050
-Kosovo,0.259
-Latvia,0.087
-Liechtenstein,0.018
-Lithuania,0.096
-Luxembourg,0.067
-Malta,0.044
-Moldova,0.063
-Monaco,0.020
-Montenegro,0.173
-Netherlands,0.036
-North Macedonia,0.143
-Norway,0.050
-Poland,0.031
-Portugal,0.069
-Romania,0.057
-Russia,0.058
-San Marino,0.080
-Serbia,0.075
-Slovakia,0.073
-Slovenia,0.049
-Spain,0.161
-Sweden,0.089
-Switzerland,0.051
-Turkey,0.122
-Ukraine,0.094
-United Kingdom,0.049
-Vatican City,
+State,Unemployment rate,rate
+Armenia,0.166,16.6
+Albania,0.175,17.5
+Andorra,0.037,3.7
+Austria,0.057,5.7
+Azerbaijan,0.05,5
+Belarus,0.01,1
+Belgium,0.057,5.7
+Bosnia and Herzegovina,0.157,15.7
+Bulgaria,0.053,5.3
+Croatia,0.071,7.1
+Cyprus,0.068,6.8
+Czech Republic,0.032,3.2
+Denmark,0.061,6.1
+Estonia,0.072,7.2
+Finland,0.084,8.4
+France,0.08,8
+Georgia,0.124,12.4
+Germany,0.045,4.5
+Greece,0.128,12.8
+Hungary,0.045,4.5
+Iceland,0.068,6.8
+Ireland,0.058,5.8
+Italy,0.102,10.2
+Kazakhstan,0.05,5
+Kosovo,0.259,25.9
+Latvia,0.087,8.7
+Liechtenstein,0.018,1.8
+Lithuania,0.096,9.6
+Luxembourg,0.067,6.7
+Malta,0.044,4.4
+Moldova,0.063,6.3
+Monaco,0.02,2
+Montenegro,0.173,17.3
+Netherlands,0.036,3.6
+North Macedonia,0.143,14.3
+Norway,0.05,5
+Poland,0.031,3.1
+Portugal,0.069,6.9
+Romania,0.057,5.7
+Russia,0.058,5.8
+San Marino,0.08,8
+Serbia,0.075,7.5
+Slovakia,0.073,7.3
+Slovenia,0.049,4.9
+Spain,0.161,16.1
+Sweden,0.089,8.9
+Switzerland,0.051,5.1
+Turkey,0.122,12.2
+Ukraine,0.094,9.4
+United Kingdom,0.049,4.9
+Vatican City,,
