@@ -1,0 +1,58 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A scatterplot showing horsepower and miles per gallons for various cars.",
+  
+    "title": {
+      "text": "European Population and Growth Rates",
+      "subtitle": ["Source Eurostat"],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "data": {"url": "https://raw.githubusercontent.com/TKuijlaars/TKuijlaars.github.io/main/europepopgdpgrowth.csv"},
+    "encoding": {
+      "x": {"field": "GDP Growth", "type": "quantitative"},
+      "y": {"field": "Population Growth", "type": "quantitative"}
+    },
+  "transform": [
+  {"filter": "datum.Year==selectedYear"}
+    ],
+  "width":400,
+    "params": [
+      {
+        "name": "selectedYear",
+        "value": 2021,
+        "bind": {
+          "input": "range",
+          "min": 2014,
+          "max": 2021,
+          "step": 1,
+          "name": "Select year:"
+        }
+      }
+    ],
+    "layer": [
+      {
+        "mark": {"type": "circle", "color": "green", "opacity": 0.7},
+        "encoding": {
+          "x": {
+            "field": "GDP Growth",
+            "type": "quantitative",
+            "axis": {"grid": false},
+            "title": "GDP Growth %"
+          },
+          "y": {
+            "field": "Population Growth",
+            "type": "quantitative",
+            "axis": {"grid": false},
+            "title": "Population Growth &"
+          }
+         
+          
+          
+        }
+      }
+    ]
+  }
+  

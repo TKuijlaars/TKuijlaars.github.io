@@ -25,7 +25,7 @@
 
     <div class="banner">
         <div class="navbar">
-            <TK>Thomas Kuijlaars</TK>
+            <TK>Thomas Kuijlaars 2001259</TK>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -127,14 +127,24 @@
     <div class="myWeek8">
         <h2>Week 8</h2>
         <h3>Festival of Economics</h3>
-        <p>A graph</p>
-        <div class="chart" id="PublicPrivate1"></div>
+        <p>One of the speaker events was about how public sector wages are growing slower than in the private sector.
+            The chart below illustrates this.
+        </p>
+        <div class="chart" id="Chart10"></div>
+        <a href="https://github.com/TKuijlaars/TKuijlaars.github.io/blob/main/housepricewage.json"><img src="Chart10.png" class=""tkimage></a>
+        <p>The growing disparity between Private and Public Sector pay is especially concerning because of house prices are increasing
+            faster than wages which will disproportionally affect those in the Public Sector.
+        </p>
+        <div class="chart" id="Chart11"></div>
+        <a href="https://github.com/TKuijlaars/TKuijlaars.github.io/blob/main/publicprivate.json"><img src="Chart11.png" class=""tkimage></a>
+
     </div>
 
     <div class="myWeek9">
         <h2>Week 9</h2>
         <h3>Advanced Charts</h3>
-        <p>A graph</p>
+        <div class="chart" id="Development"></div>
+        <div class="chart" id="Popgrow"></div>
     </div>
 
     <div class="myWeek10">
@@ -171,7 +181,10 @@
     var myONSChart9 = "ONS_chart_Consumption.json";
     var myUSStatesmap1 = "USStatesbasicmap.json";
     var myUSStatesmap2 = "USStatesHappiness.json";
-    var myPublicPrivatewage = "PublicPrivatewage.json";
+    var myChart10 = "publicprivate.json";
+    var myChart11 = "housepriceswage.json";
+    var Development = "Development.json";
+    var Popgrow = "PopGrow.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
@@ -192,8 +205,10 @@
     vegaEmbed('#ONSChart9', myONSChart9);
     vegaEmbed('#USStatesmap1', myUSStatesmap1);
     vegaEmbed('#USStatesmap2', myUSStatesmap2);
-    vegaEmbed('#PublicPrivate1', myPublicPrivatewage);
-
+    vegaEmbed('#Chart10', myChart10);
+    vegaEmbed('#Chart11', myChart11);
+    vegaEmbed('#Development', Development);
+    vegaEmbed('#Popgrow', Popgrow);
 </script>
 
 </html>

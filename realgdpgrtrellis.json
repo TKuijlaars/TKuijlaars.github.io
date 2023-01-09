@@ -1,0 +1,63 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  
+    "description": "Hospital admissions",
+  
+  "title": {
+      "text": "Real GDP Growth Rate Trellis",
+      "subtitle":"Source:Eurostat     Includes tooltip",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+  
+    "data": {
+      "url": "https://raw.githubusercontent.com/TKuijlaars/TKuijlaars.github.io/main/europegrowth.csv",
+      "format": {"type": "csv"}
+    },
+  
+    "height": 130,
+    
+    "width": 120,
+    
+    "mark": {"type": "line", "color":"red"},
+    
+    "transform": [
+       {
+        "filter": {
+          "field": "TIME_PERIOD",
+          "range": [
+            {"year": 2010},
+            {"year": 2021}
+          ]
+        }
+      }
+    ],
+    
+    "encoding": {
+      
+      "x": {"field": "TIME_PERIOD", "type": "temporal", "title": null},
+      
+      "y": {
+        "field": "OBS_VALUE",
+        "type": "quantitative",
+        "title": null
+      
+      },
+  
+      "facet": {
+        "field": "geo",
+        "type": "nominal",
+        "columns": 2,
+        "title": null
+      },
+      "tooltip": [
+        {"field": "TIME_PERIOD", "type": "temporal", "title": "Year"},
+        {"field": "OBS_VALUE","type": "quantitative","title": "Growth Rate %","format": ",.0f"}
+      ]
+  
+      
+    },
+    "resolve": {"scale": {"y": "independent"}}
+  }

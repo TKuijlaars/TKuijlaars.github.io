@@ -1,0 +1,24 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A simple bar chart with embedded data.",
+  
+    "title": {
+        "text": "Netherlands Forecast Population Growth",
+        "subtitle":"Source: Eurostat"
+        },
+    "data": {
+      "url": "https://raw.githubusercontent.com/TKuijlaars/TKuijlaars.github.io/main/populationprojection.csv",
+      "format":{"type":"csv"}
+    },
+    "mark": {
+      "type":"line"
+    },
+  
+    "width":600,
+  
+    "encoding": {
+      "x": {"field": "TIME_PERIOD", "type": "nominal", "axis": {"labelAngle": 0}, "title": ""},
+      "y": {"field": "OBS_VALUE", "type": "quantitative", "title":"Population"}
+    }
+  }
+  

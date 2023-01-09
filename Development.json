@@ -1,0 +1,39 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    
+  
+    "title": {
+        "text": "European Development and Population Density",
+        "subtitle":["2021 Data", "Source: Eurostat"],
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"
+      },
+    "data": {"url": "https://raw.githubusercontent.com/TKuijlaars/TKuijlaars.github.io/main/popdensitybubble.csv"},
+    "config": {
+      "background":"white",
+      "view": {
+        "stroke": "transparent"}},
+    
+    "mark": {
+        "type":"circle",
+        "color":"green",
+        "opacity":0.7},
+      "height": 300,
+      "width": 300,
+    "encoding": {
+      "x": {"field": "HDI", "type": "quantitative", "scale": {"domain": [0.7, 1]}},
+      "y": {"field": "GDP in billions", "type": "quantitative", "title":"GDP in Billions (Euros)"},
+      "size": {"field": "Population Density", "type": "quantitative", "title":"People/ Km^2"},
+  
+    "tooltip":[
+          {"field":"geo", "type": "ordinal", "title":"Country"},
+          {"field":"Population Density", "type": "quantitative", "title":"Population Density", "format":".0f"},
+          {"field":"GDP in billions", "type": "quantitative", "title":"GDP in Billions", "format":".2f"},
+          {"field":"HDI", "type": "quantitative", "title":"HDI", "format":","}
+  
+        ]
+        }
+  }
+  
